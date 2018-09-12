@@ -1,0 +1,1 @@
+web: gunicorn vamonde_challenge.wsgi
