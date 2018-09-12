@@ -3,6 +3,7 @@
 - This Endpoint returns the average duration for trips in a given time span. It can also filter results by "from_station_id" of Trips as well as return station data for the given "from_station_id"'s.
 
 - To read average trip duration and station data for a given time period, make a GET request to https://vamonde-challenge-solution.herokuapp.com/avg_trip_duration/
+- Example request: https://vamonde-challenge-solution.herokuapp.com/avg_trip_duration/?starttime=2013-06-01T00:00&endtime=2013-12-31T23:59&from_station_id=128,162,5,175,28,85
   - Results returned in the response body will be filtered by the parameters given in the query string of the request url.
   - The parameters given in the REQUIRED query string can be divided into 2 categories: "primary" and "secondary"
   
