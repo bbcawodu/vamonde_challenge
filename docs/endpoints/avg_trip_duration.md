@@ -1,6 +1,6 @@
 # Average Trip Duration Endpoint Documentation
 [Source Code](../../vamonde_challenge/views/avg_trip_duration_view.py)
-This Endpoint returns the average duration for trips in a given time span. It can also filter results by "from_station_id" of Trips as well as return station data for the given "from_station_id"'s.
+- This Endpoint returns the average duration for trips in a given time span. It can also filter results by "from_station_id" of Trips as well as return station data for the given "from_station_id"'s.
 
 - To read average trip duration and station data for a given time period, make a GET request to https://vamonde-challenge-solution.herokuapp.com/avg_trip_duration/
   - Results returned in the response body will be filtered by the parameters given in the query string of the request url.
@@ -19,7 +19,7 @@ This Endpoint returns the average duration for trips in a given time span. It ca
     
 
 - The response BODY will be a JSON document with the following format:
-  ```
+```
 {
   "status": {
     "error_code": Integer,
@@ -40,7 +40,7 @@ This Endpoint returns the average duration for trips in a given time span. It ca
     "average_trip_duration": String
   }
 }
-  ```
+```
 
 - If there are no errors processing the request:
   - "Error Code" will be 0.
