@@ -37,5 +37,5 @@ A Live version of the solution can be found at [Vamonde Challenge Solution](http
   * [Source Code](vamonde_challenge/views/avg_trip_duration_view.py)
   * [Documentation](docs/endpoints/avg_trip_duration.md)
 * Import the attached divvy_vamonde.csv into a separate table in the database. Update the endpoint to also return the latitude and longitude along with the id and name in the response.
-  * [Source Code](vamonde_challenge/views/avg_trip_duration_view.py)
+  * [Source Code](vamonde_db/models.py)
   * [Documentation](docs/endpoints/avg_trip_duration.md)
