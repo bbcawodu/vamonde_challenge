@@ -3,5 +3,6 @@
 .idea/
 idea/
 *.pyc
+vamonde_challenge/local.env
 static/
 .pytest_cache

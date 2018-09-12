@@ -1,5 +1,10 @@
 from django.db import models
 from django.core.validators import MinValueValidator
+from django.conf import settings
+import googlemaps
+
+
+gmaps = googlemaps.Client(key=settings.GOOGLE_API_KEY)
 
 
 class Station(models.Model):
@@ -9,9 +14,12 @@ class Station(models.Model):
   name = models.CharField(blank=True, null=True, max_length=1000, unique=True)
 
   def serialize_data(self):
+    lat_long_info = gmaps.geocode('{}, Chicago, IL'.format(self.name))[0]['geometry']['location']
+
     serialized_data = {
       'station_id': self.station_id,
       'name': self.name,
+      'geolocation': "{} degrees lat, {} degrees long".format(lat_long_info['lat'], lat_long_info['lng'])
     }
 
     return serialized_data

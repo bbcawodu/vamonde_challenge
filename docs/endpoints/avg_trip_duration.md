@@ -32,8 +32,9 @@
   "data": {
     "from_station_data": [
       {
-      "station_id": Integer,
-      "name": String
+        "station_id": Integer,
+        "name": String,
+        "geolocation": String
       },
       ...,
       ...
