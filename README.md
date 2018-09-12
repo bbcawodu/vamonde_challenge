@@ -20,7 +20,7 @@ If you have further time:
 6) Import the attached divvy_vamonde.csv into a separate table in the database. Update the endpoint to also return the latitude and longitude along with the id and name in the response.
 ```
 
-A Live version of the solution can be found at [Vamonde Challenge Solution](https:vamonde-challenge-solution.herokuapp.com/avg_trip_duration). Documentation at [Documentation](docs/endpoints/avg_trip_duration.md)
+A Live version of the solution can be found at [Vamonde Challenge Solution](https://vamonde-challenge-solution.herokuapp.com/avg_trip_duration). Documentation at [Documentation](docs/endpoints/avg_trip_duration.md)
 
 
 ## Solution Breakdown
